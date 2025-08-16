@@ -7,3 +7,39 @@ body {
     padding-left: 40px;
     padding-top: 30px;
 }
+
+.letter-row {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#letter-box {
+    width: 40%;
+    border: 5px solid #544111;
+    padding: 10px;
+}
+
+.letter {
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    color: #DFD6BE;
+    cursor: pointer;
+    margin: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.letter:hover {
+    color: #BCB194;
+}
+
+/* FONT
+.nunito-<uniquifier> {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/

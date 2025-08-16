@@ -1,5 +1,6 @@
 import './App.css';
 import logo from './img/hm-logo.png';
+import Box from "./Box.js";
 
 function App() {
   /*let items = [
@@ -15,7 +16,7 @@ function App() {
 */
   return (<div>
     <a href="index.html"><img id="logo" src={logo} alt="hey hangman!"/></a>
-    <p>hey hangman!</p>
+    <Box />
   </div>)
 }
 
