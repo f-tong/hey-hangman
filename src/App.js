@@ -1,5 +1,6 @@
 import './App.css';
 import logo from './img/hm-logo.png';
+import hanger from './img/hanger.png';
 import Box from "./Box.js";
 
 function App() {
@@ -16,7 +17,10 @@ function App() {
 */
   return (<div>
     <a href="index.html"><img id="logo" src={logo} alt="hey hangman!"/></a>
-    <Box />
+    <div id="main">
+      <div id="ls"><img src={hanger} alt="oops! there was an error!"></img></div>
+      <div id="rs"><Box /></div>
+    </div>
   </div>)
 }
 

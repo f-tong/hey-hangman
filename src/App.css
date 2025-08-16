@@ -8,6 +8,26 @@ body {
     padding-top: 30px;
 }
 
+#main {
+    display: flex;
+    width: 100%;
+    margin-top: 2vw;
+    flex-direction: row;
+    /*background-color: #BCB194;*/
+}
+
+#ls {
+    margin-left: 8vw;
+    margin-right: 15%;
+    width: 20%;
+}
+
+#rs {
+    text-align: center;
+    width: 49vw;
+    margin-right: 8vw;
+}
+
 .letter-row {
     display: flex;
     justify-content: space-evenly;
@@ -15,7 +35,8 @@ body {
 }
 
 #letter-box {
-    width: 40%;
+    width: 70%;
+    margin: auto;
     border: 5px solid #544111;
     padding: 10px;
 }
