@@ -10,10 +10,14 @@ function Box() {
     for (let i = 122 - 12; i < 122; i++) {
         alphabet2.push(String.fromCharCode(i));
     }
-    return (<div id="letter-box">
-        <div class="letter-row">{alphabet1.map((letter) => <Letter letter={letter} />)}</div>
-        <div class="letter-row">{alphabet2.map((letter) => <Letter letter={letter} />)}</div>    
-    </div>);
+
+    const labelStyle = {color: '#544111', fontSize: '1.5vw'};
+
+    return <><p className="nunito-bold" style={ labelStyle }>click a letter to make a guess!</p>
+    <div id="letter-box">
+        <div className="letter-row">{alphabet1.map((letter) => <Letter letter={letter} />)}</div>
+        <div className="letter-row">{alphabet2.map((letter) => <Letter letter={letter} />)}</div>    
+    </div> </>;
 }
 
 export default Box;
