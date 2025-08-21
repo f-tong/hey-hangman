@@ -1,6 +1,7 @@
-function Blank({ char }) {
+import "./App.css";
 
-    return <div>Blank</div>
+function Blank({ char }) {
+    return <div className="b-letter"><p className="p-letter">{ char }</p><p className="under">&mdash;</p></div>
 }
 
 export default Blank;

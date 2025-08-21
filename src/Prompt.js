@@ -1,3 +1,4 @@
+import "./App.css"
 import Blank from './Blank';
 
 function Prompt({ prompt }) {
@@ -5,7 +6,8 @@ function Prompt({ prompt }) {
     for (let i = 0; i < prompt.length; i++) {
         promptLetters.push(prompt.charAt(i));
     }
-    return <div>{promptLetters.map((char) => <Blank character={char} />)}</div>
+    //
+    return <div id="prompt">{promptLetters.map((char) => <Blank char={char} />)}</div>
 }
 
 export default Prompt;

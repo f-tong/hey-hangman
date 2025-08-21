@@ -3,8 +3,22 @@ import logo from './img/hm-logo.png';
 import hanger from './img/hanger.png';
 import Box from "./Box.js";
 import Setting from "./Setting.js";
+import Prompt from "./Prompt.js";
 
 function App() {
+  let allPrompts = [
+    'What do you yearn for?',
+    'I love... I love..., I love, I love, I love',
+    'You saved me!',
+    'WHAT IF....',
+    'That\'s my guy',
+    'That\'s heat',
+    'I\'m not an alcoholic.',
+    'Yunshang?'
+  ];
+  let pick = Math.floor(Math.random() * allPrompts.length + 1);
+  let currentPrompt = allPrompts[pick];
+
   /*let items = [
           'New York',
           'San Francisco',
@@ -16,6 +30,7 @@ function App() {
   }
   return <div><ListGroup items={items} heading="Cities" onSelectItem={handleSelectItem}/></div>;
 */
+// 
   return (<div>
     <a href="index.html"><img id="logo" src={logo} alt="hey hangman!"/></a>
     <div id="main">
@@ -23,7 +38,10 @@ function App() {
         <Setting />
         <img src={hanger} alt="oops! there was an error!" height="650vh"></img>
       </div>
-      <div id="rs"><Box /></div>
+      <div id="rs">
+        <Prompt prompt={ currentPrompt } />
+        <Box />
+      </div>
     </div>
   </div>)
 }
