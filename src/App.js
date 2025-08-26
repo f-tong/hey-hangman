@@ -10,7 +10,7 @@ function App() {
     'What do you yearn for?',
     'I love... I love..., I love, I love, I love',
     'You saved me!',
-    'WHAT IF....',
+    'WHAT IF...',
     'That\'s my guy',
     'That\'s heat',
     'I\'m not an alcoholic.',
